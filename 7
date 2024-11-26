@@ -11,7 +11,7 @@ print(car_2)
 Задание№2
 
 def switch_check(switch):
-    if switch == True:
+    if switch == True:de
         print("True работает")
     elif switch == False:
         print("False не работает")
@@ -25,6 +25,18 @@ switch_check(switch_1)
 switch_check(switch_2)
 switch_check(switch_3)
 
-Задание№3
+Задание№3.1
 
+def triangle(a,b,c):
+    print("Длина сторон треугольника:",a,b,c,"\nИнформация:")
+    if a + b <= c or a + c <= b or c + b < a:
+        print("некорректные стороны. Невозможно построить треугольник.")
+    elif a != b and a != c and b != c:
+        print("Разносторонний треугольник.")
+    elif a ==b or a == c or b == c:
+        print("Равнобедренный треугольник.")
+    elif a == b == c:
+        print("Равносторонний треугольник.")
+
+Задание№3.2
 
