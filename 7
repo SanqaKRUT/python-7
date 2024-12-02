@@ -40,3 +40,22 @@ def triangle(a,b,c):
 
 Задание№3.2
 
+import math
+def triangle(a, b, c):
+    print("Длина сторон треугольника:" a, b, c, "\nИнформация:")
+    if a +b <= c or a + c <= b <= b <= a:
+        print("Некоторые стороныю Невозможно постороить треугольник.")
+    elif a != b and a != b and c:
+        print("Разносторонний треугольник")
+    elif a== b or a == c or b == c:
+        print("Равнобедренный тругольник")
+    elif a== b == c:
+        print("Равносторонний треугольник")
+    p = (a + b +c)
+    s = p / 2
+    area = math.sqrt(s * (s - a) * (s - b) *(s - c))
+    print(f"Площадь: {int(s)}\nериметр: {round(area, 2)}")
+
+    Zadanie №4
+
+    
