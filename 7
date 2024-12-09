@@ -58,4 +58,59 @@ def triangle(a, b, c):
 
     Zadanie №4
 
-    
+def number_change(inpss: int,outs: int):
+    i = 0
+    if inpss > outs:
+        while inpss > outs:
+            inpss -= 1
+            i += 1
+    elif inpss < outs:
+        while inpss < outs:
+            inpss += 1
+            i += 1
+    else:
+        i = 0,
+        print("ты бубун")
+    return i, inpss, outs
+
+print(number_change(12, 4))
+
+Задание№5
+
+player = 0
+
+
+def info_player():
+    print(f"Игрок пробежал {player} км.")
+
+
+def run_player(km):
+    global player
+    player += km / 2
+
+
+info_player()
+run_player(30)
+run_player(12.5)
+info_player()
+
+Задание№6
+
+def calculator(num1: int, num2: int, operation: str) -> int:
+    """
+    Выполняет сложение или вычитание двух чисел.
+
+    Args:
+        num1: Первое число.
+        num2: Второе число.
+        operation: Операция ('+' или '-').
+
+    Returns:
+        Результат операции или сообщение об ошибке.
+    """
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    else:
+        return "Ошибка: Неверная операция. Используйте '+' или '-'." 
